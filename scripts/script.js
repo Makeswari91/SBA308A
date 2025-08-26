@@ -1,7 +1,7 @@
 const apiKey = '6a02b5e57d5d17c6d0d96e7319cf1d88';
-const city = 'Chennai';
+const city = 'California';
 
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=Chennai&appid=6a02b5e57d5d17c6d0d96e7319cf1d88&units=metric`)
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=California&appid=6a02b5e57d5d17c6d0d96e7319cf1d88&units=metric`)
   .then(response => response.json())
   .then(data => {
     const weather = data.weather[0].description;
