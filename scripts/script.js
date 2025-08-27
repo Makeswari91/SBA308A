@@ -21,3 +21,12 @@ export async function getWeather(city) {
 }
 
 
+// POST
+export async function postUserPreference(data) {
+  const response = await fetch('https://your-api.com/preferences', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data),
+  });
+  return response.json();
+}
